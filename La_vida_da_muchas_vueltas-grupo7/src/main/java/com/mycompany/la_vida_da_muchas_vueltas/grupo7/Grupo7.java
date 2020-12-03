@@ -7,10 +7,7 @@ package com.mycompany.la_vida_da_muchas_vueltas.grupo7;
 
 import java.util.Random;
 
-/**
- *
- * @author 2904d
- */
+
 public class Grupo7 {
     public static void main(String[] args) {       
     String generoYo= FuncionesPersona.generoAleatorio();

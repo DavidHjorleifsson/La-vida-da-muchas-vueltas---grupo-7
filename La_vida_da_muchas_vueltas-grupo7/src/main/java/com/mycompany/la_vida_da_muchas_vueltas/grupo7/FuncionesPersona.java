@@ -13,26 +13,28 @@ import java.util.Random;
  */
 public class FuncionesPersona {
     
-    public static void generoAleatorio(){        
+    public static String generoAleatorio(){           
         Random alG= new Random();
         String generoYo=alG.nextBoolean()?"Hombre":"Mujer";
+        return generoYo;       
     }
     
-    public static void nombreAleatorio(){       
-        Random alG= new Random();
-        String generoYo=alG.nextBoolean()?"Hombre":"Mujer";
-        
+    public static String nombreAleatorio(String generoYo){       
+        String res="";
         if(generoYo.equals("Hombre")){
             String nombreYo[]={"MatÃ­as","Luis","Manolo","Paco","Jose","David","Pablo","NÃ©stor","Pepe","Antonio","Francisco"};
-            System.out.println("Nombre: "+nombreYo);
+            res+=("Nombre: "+nombreYo);
         }else{
             String nombreYo[]={"Marta","Lola","Ana","Rosa","Angustias","Laura","Sara"};
-            System.out.println("Nombre: "+nombreYo);
+            res+=("Nombre: "+nombreYo);
         }   
+        return res;
     }
-    public static void apellidosAleatorio(){
-        String apellidosYo[]={"RodrÃ­guez","Poveda","MartÃ­n","GÃ³mez","Monedero","Aguilar","Luque","De Grado"};
-        String apellidosYo2[]={"Fernández","Diaz","Moreno","Torres","Ortega","Suarez","Cortes","Cano"};
-        System.out.print(" "+apellidosYo+" "+apellidosYo2);
+    public static String apellidosAleatorio(){
+        String res="";
+        String apellidos[]={"RodrÃ­guez","Poveda","MartÃ­n","GÃ³mez","Monedero","Aguilar","Luque","De Grado"};
+        String apellidos2[]={"Fernández","Diaz","Moreno","Torres","Ortega","Suarez","Cortes","Cano"};
+        res+=(" "+apellidos+" "+apellidos2);
+        return res;
     }
 }
