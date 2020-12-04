@@ -15,13 +15,7 @@ public class FuncionesPersona {
     
     public static Boolean generoAleatorio(){           
         Random alG= new Random();
-        boolean resultado;
-        String rt = ("");
-        Boolean [] generos={true,false};
-        int generoRandom = alG.nextInt(2);
-        boolean generoAleatorio = (generos[generoRandom]);
-        
-                return generoAleatorio;
+        return alG.nextBoolean();
     }
     
     public static String nombreAleatorio(String generoYo){       
