@@ -13,10 +13,15 @@ import java.util.Random;
  */
 public class FuncionesPersona {
     
-    public static String generoAleatorio(){           
+    public static Boolean generoAleatorio(){           
         Random alG= new Random();
-        String generoYo=alG.nextBoolean()?"Hombre":"Mujer";
-        return generoYo;       
+        boolean resultado;
+        String rt = ("");
+        Boolean [] generos={true,false};
+        int generoRandom = alG.nextInt(2);
+        boolean generoAleatorio = (generos[generoRandom]);
+        
+                return generoAleatorio;
     }
     
     public static String nombreAleatorio(String generoYo){       
