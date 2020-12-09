@@ -19,21 +19,47 @@ public class FuncionesPersona {
         return alG.nextBoolean();
     }
     
-    public static String nombreAleatorio(boolean generoYo){       
+    public static String nombreAleatorio(Boolean generoYo){       
         String res="";
-        if(generoYo==true){
+        if(generoYo.equals("Hombre")){
             String nombreYo[]={"MatÃ­as","Luis","Manolo","Paco","Jose","David","Pablo","NÃ©stor","Pepe","Antonio","Francisco"};
             res+=("Nombre: "+nombreYo);
+            return nombreYo[new Random().nextInt(nombreYo.length)];
         }else{
             String nombreYo[]={"Marta","Lola","Ana","Rosa","Angustias","Laura","Sara"};
             res+=("Nombre: "+nombreYo);
+            return nombreYo[new Random().nextInt(nombreYo.length)];
         }   
-        return nombreYo[(int)nombreYo(alG.nextInt)];
+        
     }
     public static String apellidosAleatorio(){
         String res="";
-        String apellidosYo[]={"RodrÃ­guez","Poveda","MartÃ­n","GÃ³mez","Monedero","Aguilar","Luque","De Grado"};
-        res+=("Apellido: "+apellidosYo);
+        String apellidos[]={"RodrÃ­guez","Poveda","MartÃ­n","GÃ³mez","Monedero","Aguilar","Luque","De Grado"};
+        String apellidos2[]={"Fernández","Diaz","Moreno","Torres","Ortega","Suarez","Cortes","Cano"};
+        res+=(" "+apellidos+" "+apellidos2);
         return res;
     }
+    public static int valorEstadisticaAleatorio(){
+    
+    Random aleatorio = new Random();
+    int numeroAleatorio=aleatorio.nextInt((101-0));
+    
+    return numeroAleatorio; 
+    }
+    
+     public static int valorEstadisticaAleatorio(int min){
+   
+    Random aleatorio = new Random();
+    int numeroAleatorio=aleatorio.nextInt((101-min)+min);
+    
+    return numeroAleatorio; 
+    }
+     public static int valorEstadisticaAleatorio(int min, int max){
+   
+    Random aleatorio = new Random();
+    int numeroAleatorio=aleatorio.nextInt(max-min)+min;
+    
+    return numeroAleatorio; 
+    }
 }
+
