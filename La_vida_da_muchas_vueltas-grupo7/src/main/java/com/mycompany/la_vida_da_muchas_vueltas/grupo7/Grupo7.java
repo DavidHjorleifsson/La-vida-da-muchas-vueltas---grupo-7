@@ -17,7 +17,7 @@ public class Grupo7 {
         System.out.println(generoYo);
         System.out.println(nombreYo);
         System.out.println(apellidosYo);
-        System.out.println(valorEstadisticaAleatorio);
+        System.out.println(FuncionesPersona.apellidosAleatorio());
     }
        
 }
