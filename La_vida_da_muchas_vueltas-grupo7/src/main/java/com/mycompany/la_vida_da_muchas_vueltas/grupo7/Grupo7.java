@@ -11,13 +11,11 @@ import java.util.Random;
 public class Grupo7 {
     public static void main(String[] args) {       
     boolean generoYo= FuncionesPersona.generoAleatorio();
-    String nombreYo = FuncionesPersona.nombreAleatorio();
+    String nombreYo= FuncionesPersona.nombreAleatorio(generoYo);
     String apellidosYo= FuncionesPersona.apellidosAleatorio();
-    int numeroAleatorio= FuncionesPersona.valorEstadisticaAleatorio();
         System.out.println(generoYo);
         System.out.println(nombreYo);
         System.out.println(apellidosYo);
-        System.out.println(FuncionesPersona.apellidosAleatorio());
     }
        
 }
