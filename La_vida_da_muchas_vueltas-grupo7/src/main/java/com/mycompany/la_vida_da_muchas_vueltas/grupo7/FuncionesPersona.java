@@ -9,7 +9,7 @@ import java.util.Random;
 
 /**
  *
- * @author 2904d
+ * @author David Hjorleifsson, Daniel Cabello, Jesús Guirao
  */
 public class FuncionesPersona {
     
