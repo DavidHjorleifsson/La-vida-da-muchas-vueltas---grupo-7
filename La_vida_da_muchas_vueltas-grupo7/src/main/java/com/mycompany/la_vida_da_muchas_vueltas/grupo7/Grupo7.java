@@ -10,8 +10,8 @@ import java.util.Random;
 
 public class Grupo7 {
     public static void main(String[] args) {       
-    String generoYo= FuncionesPersona.generoAleatorio();
-    String nombreYo= FuncionesPersona.nombreAleatorio();
+    boolean generoYo= FuncionesPersona.generoAleatorio();
+    String nombreYo = FuncionesPersona.nombreAleatorio();
     String apellidosYo= FuncionesPersona.apellidosAleatorio();
     int numeroAleatorio= FuncionesPersona.valorEstadisticaAleatorio();
         System.out.println(generoYo);
