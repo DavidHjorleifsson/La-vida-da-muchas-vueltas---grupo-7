@@ -37,7 +37,7 @@ public class FuncionesPersona {
         String apellidos[]={"RodrÃ­guez","Poveda","MartÃ­n","GÃ³mez","Monedero","Aguilar","Luque","De Grado"};
         String apellidos2[]={"Fernández","Diaz","Moreno","Torres","Ortega","Suarez","Cortes","Cano"};
         res+=(" "+apellidos+" "+apellidos2);
-        return res;
+        return apellidos[new Random().nextInt(apellidos.length)];
     }
     public static int valorEstadisticaAleatorio(){
     
@@ -61,5 +61,9 @@ public class FuncionesPersona {
     
     return numeroAleatorio; 
     }
+     public static String imprimePersona(String nombre, String apellidos, boolean genero, byte sociabilidad, byte empatia, byte inteligencia, byte velocidad, byte fuerza){
+     
+     }
+
 }
 
