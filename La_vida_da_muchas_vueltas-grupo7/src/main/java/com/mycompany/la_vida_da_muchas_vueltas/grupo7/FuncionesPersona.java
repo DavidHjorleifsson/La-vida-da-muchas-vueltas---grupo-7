@@ -36,4 +36,26 @@ public class FuncionesPersona {
         res+=(" "+apellidos+" "+apellidos2);
         return res;
     }
+    public static int valorEstadisticaAleatorio(){
+    
+    Random aleatorio = new Random();
+    int numeroAleatorio=aleatorio.nextInt((101-0));
+    
+    return numeroAleatorio; 
+    }
+    
+     public static int valorEstadisticaAleatorio(int min){
+   
+    Random aleatorio = new Random();
+    int numeroAleatorio=aleatorio.nextInt((101-min)+min);
+    
+    return numeroAleatorio; 
+    }
+     public static int valorEstadisticaAleatorio(int min, int max){
+   
+    Random aleatorio = new Random();
+    int numeroAleatorio=aleatorio.nextInt(max-min)+min;
+    
+    return numeroAleatorio; 
+    }
 }

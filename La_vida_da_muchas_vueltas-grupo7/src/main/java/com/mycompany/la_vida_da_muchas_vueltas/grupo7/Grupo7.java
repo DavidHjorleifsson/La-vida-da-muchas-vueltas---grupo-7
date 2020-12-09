@@ -13,9 +13,11 @@ public class Grupo7 {
     String generoYo= FuncionesPersona.generoAleatorio();
     String nombreYo= FuncionesPersona.nombreAleatorio();
     String apellidosYo= FuncionesPersona.apellidosAleatorio();
+    int numeroAleatorio= FuncionesPersona.valorEstadisticaAleatorio();
         System.out.println(generoYo);
         System.out.println(nombreYo);
         System.out.println(apellidosYo);
+        System.out.println(valorEstadisticaAleatorio);
     }
        
 }
