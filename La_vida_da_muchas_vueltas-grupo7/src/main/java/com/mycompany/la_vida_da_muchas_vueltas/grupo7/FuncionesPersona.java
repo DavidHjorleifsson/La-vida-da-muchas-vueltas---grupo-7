@@ -8,11 +8,19 @@ package com.mycompany.la_vida_da_muchas_vueltas.grupo7;
 import java.util.Random;
 
 /**
- *
- * @author David Hjorleifsson, Daniel Cabello, Jesús Guirao
+ * Clase principal,contiene el main donde se generan variables.
+ * 
+ * @author David Hjorleifsson 
+ * @author Daniel Cabello
+ * @author Jesús Guirao
+ * @version 1.0
+ * @since 0.2
  */
 public class FuncionesPersona {
-    
+    /**
+     *Programa en el cual creamos estadísticas aleatorias de una persona también de sus padres y de sus hermanos,
+     * generamos un nombre aleatorio según el género que sea.
+     */
     public static Boolean generoAleatorio(){           
         Random alG= new Random();
         String generoYo=alG.nextBoolean()?"Hombre":"Mujer";
