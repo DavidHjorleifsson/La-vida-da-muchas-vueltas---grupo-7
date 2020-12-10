@@ -13,7 +13,7 @@ public class Grupo7 {
     boolean generoYo= FuncionesPersona.generoAleatorio();
     String nombreYo= FuncionesPersona.nombreAleatorio(generoYo);
     String apellidosYo= FuncionesPersona.apellidosAleatorio();
-    int sociabilidadMaxYo=FuncionesPersona.imprimePersona();
+    int sociabilidadMaxYo=FuncionesPersona.valorEstadisticaAleatorio();
     int empatiaMaxYo=FuncionesPersona.imprimePersona();
     int inteligenciaMaxYo=FuncionesPersona.imprimePersona();
     int velocidadMaxYo=FuncionesPersona.imprimePersona();

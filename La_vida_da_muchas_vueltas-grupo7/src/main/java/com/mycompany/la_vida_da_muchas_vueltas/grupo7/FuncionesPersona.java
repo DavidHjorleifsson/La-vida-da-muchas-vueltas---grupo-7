@@ -23,18 +23,22 @@ public class FuncionesPersona {
      */
     public static Boolean generoAleatorio(){           
         Random alG= new Random();
-        String generoYo=alG.nextBoolean()?"Hombre":"Mujer";
         return alG.nextBoolean();
     }
     
     public static String nombreAleatorio(Boolean generoYo){       
         String res="";
-        if(generoYo.equals("Hombre")){
-            String nombreYo[]={"MatÃ­as","Luis","Manolo","Paco","Jose","David","Pablo","NÃ©stor","Pepe","Antonio","Francisco"};
+        if(generoYo){
+            String nombreYo[]={"MatÃ­as","Luis","Manolo","Paco","Jose","David","Pablo","NÃ©stor","Pepe","Antonio","Francisco","Eustaquio",
+                               "Mariano","Antón","Claudio","Koldo","Patricio","Ignacio", "Oscar", "Alex", "Juan", "Lander", "Agustin", "Cesar", "Natxo", 
+                               "Nacho", "Javier", "Jorge", "Pablo", "Guillermo","Abel","Dario","Leandro","Amador","Felix",};
             res+=("Nombre: "+nombreYo);
             return nombreYo[new Random().nextInt(nombreYo.length)];
         }else{
-            String nombreYo[]={"Marta","Lola","Ana","Rosa","Angustias","Laura","Sara"};
+            String nombreYo[]={"Paca", "Presentación", "Sarai", "Antonia", "Loli", "Juani", "Olga", "Susana", "Ruth", "Eustaquia",
+                "Godofreda", "Josefina", "Ermerigilda", "Úrsula", "Angie", "Carla", "Isabel", "Marta", "Dolores", "Sonia", "Raquel", "Esther",
+                "Erika", "Patrocinio", "Luisa", "Natalia", "Almudena", "Laura", "Kassandra", "Violeta", "María", "Mery", "Susana", "Daniela",
+                "Juana", "Rebeca", "Eustaquia", "Herminia", "Sandra", "Lorena", "Maria", "Paula", "Ainhoa", "Mar", "Manoli", "Julia", "Rocio"};
             res+=("Nombre: "+nombreYo);
             return nombreYo[new Random().nextInt(nombreYo.length)];
         }   
@@ -42,8 +46,12 @@ public class FuncionesPersona {
     }
     public static String apellidosAleatorio(){
         String res="";
-        String apellidos[]={"RodrÃ­guez","Poveda","MartÃ­n","GÃ³mez","Monedero","Aguilar","Luque","De Grado"};
-        String apellidos2[]={"Fernández","Diaz","Moreno","Torres","Ortega","Suarez","Cortes","Cano"};
+        String apellidos[]={"Fernández", "De todos los santos", "Heredia", "Aguirre", "Del Piero", "Trump", "Obama", "Rajoy", "Pérez", "Reverte",
+                            "Rojas", "Muñoz", "de la Rosa", "de la O", "Guiérrez", "Molina", "López", "Romero", "Franco", "Martínez", "Fernández","Ruiz", "Machís",
+                            "Duarte", "Díaz", "Vico", "Montoro"};
+        String apellidos2[]={"Fernández","Diaz","Moreno","Torres","Ortega","Suarez","Cortes","Cano","Vega", "Guzmán", "Varo", "Páramos", 
+                            "Pérez", "Vivo", "Piernas", "Moco", "Verde", "Pitagoras", "Pintor","Delgado", "Vietes", "Portero", "Pestaña", 
+                            "Guerrero", "Sardà", "Reyes","Soldado", "Silva", "Hernández"};
         res+=(" "+apellidos+" "+apellidos2);
         return apellidos[new Random().nextInt(apellidos.length)];
     }
