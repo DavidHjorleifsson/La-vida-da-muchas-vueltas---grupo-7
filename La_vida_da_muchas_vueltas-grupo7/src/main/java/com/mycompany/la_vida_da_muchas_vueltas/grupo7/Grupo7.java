@@ -20,6 +20,7 @@ public class Grupo7 {
     int sociabilidadMaxYo=FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)6);
     int velocidadMaxYo=FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)6);
     int fuerzaMaxYo=FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)6);
+    int edadYo=FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)6);
 //Mama
 
     String nombreMama=FuncionesPersona.nombreAleatorio(generoMama);
@@ -105,10 +106,10 @@ public class Grupo7 {
             
         }
         
+        FuncionesPersona.imprimePersona(nombreYo, apellidosYo, generoYo, sociabilidadMaxYo, empatiaMaxYo, inteligenciaMaxYo, velocidadMaxYo, fuerzaMaxYo, edadYo);
         
         
         
-    
     //Mama por pantalla
         System.out.println(nombreMama+" "+apellidosMama+"("+generoMama+")");
         System.out.println("Sociabilidad: "+sociabilidadMama+".");
