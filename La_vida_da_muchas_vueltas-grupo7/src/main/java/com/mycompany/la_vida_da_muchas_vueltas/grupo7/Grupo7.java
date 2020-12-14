@@ -10,31 +10,38 @@ import java.util.Random;
 
 public class Grupo7 {
     public static void main(String[] args) {       
-    boolean generoYo= FuncionesPersona.generoAleatorio();
+        boolean generoMama= false, generoPapa=true;
+        boolean generoYo= FuncionesPersona.generoAleatorio();
+    
     String nombreYo= FuncionesPersona.nombreAleatorio(generoYo);
     String apellidosYo= FuncionesPersona.apellidosAleatorio();
-    int sociabilidadMaxYo=FuncionesPersona.valorEstadisticaAleatorio();
-    int empatiaMaxYo=FuncionesPersona.imprimePersona();
-    int inteligenciaMaxYo=FuncionesPersona.imprimePersona();
-    int velocidadMaxYo=FuncionesPersona.imprimePersona();
-    int fuerzaMaxYo=FuncionesPersona.imprimePersona();
-    String nombreMamaYo=FuncionesPersona.imprimePersona();
-    String apellidosMamaYo=FuncionesPersona.imprimePersona();
+    int empatiaMaxYo=FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)5);
+    int inteligenciaMaxYo=FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)6);
+    int sociabilidadYo=FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)6);
+    int velocidadMaxYo=FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)6);
+    int fuerzaMaxYo=FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)6);
+//Mama
+
+    String nombreMama=FuncionesPersona.nombreAleatorio(generoMama);
+    String apellidosMamaYo=FuncionesPersona.apellidosAleatorio() + " " + FuncionesPersona.apellidosAleatorio();
     boolean generoMamaYo=FuncionesPersona.generoAleatorio();
-    int sociabilidadMamaYo=;
-    int empatiaMamaYo=;
-    int inteligenciaMamaYo=;
-    int velocidadMamaYo=;
-    int fuerzaMamaYo=;
-    String nombrePapaYo=FuncionesPersona.imprimePersona();
-    String apellidosPapaYo=FuncionesPersona.imprimePersona();
+    int empatiaMamaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
+    int inteligenciaMamaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
+    int velocidadMamaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
+    int fuerzaMamaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
+    int sociabilidadMama=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
+    int edadMama=FuncionesPersona.valorEstadisticaAletorio((byte)30);
+    //papa
+    String nombrePapaYo=FuncionesPersona.nombreAleatorio(generoPapa);
+    String apellidosPapaYo=FuncionesPersona.apellidosAleatorio() + " " + FuncionesPersona.apellidosAleatorio();
     boolean generoPapaYo=FuncionesPersona.generoAleatorio();
-    int sociabilidadPapaYo=;
-    int empatiaPapaYo=;
-    int inteligenciaPapaYo=;
-    int velocidadPapaYo=;
-    int fuerzaPapaYo=;
+    int sociabilidadPapaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
+    int empatiaPapaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
+    int inteligenciaPapaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
+    int velocidadPapaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
+    int fuerzaPapaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
     int numeroAleatorio= FuncionesPersona.valorEstadisticaAleatorio();
+    int edadPapa = FuncionesPersona.valorEstadisticaAleatorio((byte)30);
     
         System.out.println(nombreYo+" "+apellidosYo+"("+generoYo+")");
     }
