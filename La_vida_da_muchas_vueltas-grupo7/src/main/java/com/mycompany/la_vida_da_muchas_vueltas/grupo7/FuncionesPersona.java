@@ -78,7 +78,6 @@ public class FuncionesPersona {
     return numeroAleatorio; 
     }
      public static String imprimePersona(String nombre, String apellidos, boolean genero, byte sociabilidad, byte empatia, byte inteligencia, byte velocidad, byte fuerza){
-     
      }
 
 }

@@ -32,22 +32,23 @@ public class Grupo7 {
     String apellidosMamaYo=FuncionesPersona.apellidosAleatorio() + " " + FuncionesPersona.apellidosAleatorio();
     boolean generoMamaYo=FuncionesPersona.generoAleatorio();
     int empatiaMamaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
-    int inteligenciaMamaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
+    int inteligenciaMama=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
     int velocidadMamaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
     int fuerzaMamaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
     int sociabilidadMama=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
-    int edadMama=FuncionesPersona.valorEstadisticaAletorio((byte)30);
+    int edadMama=FuncionesPersona.valorEstadisticaAleatorio((byte)20);
     //papa
-    String nombrePapaYo=FuncionesPersona.nombreAleatorio(generoPapa);
-    String apellidosPapaYo=FuncionesPersona.apellidosAleatorio() + " " + FuncionesPersona.apellidosAleatorio();
+    String nombrePapa=FuncionesPersona.nombreAleatorio(generoPapa);
+    String apellidosPapa=FuncionesPersona.apellidosAleatorio() + " " + FuncionesPersona.apellidosAleatorio();
     boolean generoPapaYo=FuncionesPersona.generoAleatorio();
-    int sociabilidadPapaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
-    int empatiaPapaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
+    int sociabilidadPapa=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
+    int empatiaPapa=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
     int inteligenciaPapaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
     int velocidadPapaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
     int fuerzaPapaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
     int numeroAleatorio= FuncionesPersona.valorEstadisticaAleatorio();
-    int edadPapa = FuncionesPersona.valorEstadisticaAleatorio((byte)30);
+    int edadPapa = FuncionesPersona.valorEstadisticaAleatorio((byte)20);
+    
     
         System.out.println(nombreYo+" "+apellidosYo+"("+generoYo+")");
     }
