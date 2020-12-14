@@ -11,11 +11,11 @@ import java.util.Random;
 public class Grupo7 {
     public static void main(String[] args) {       
         boolean generoMama= false, generoPapa=true;
-        boolean generoYo= FuncionesPersona.generoAleatorio();
-    
+        //Yo
+    boolean generoYo= FuncionesPersona.generoAleatorio();    
     String nombreYo= FuncionesPersona.nombreAleatorio(generoYo);
     String apellidosYo= FuncionesPersona.apellidosAleatorio();
-    int empatiaMaxYo=FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)5);
+    int empatiaMaxYo=FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)6);
     int inteligenciaMaxYo=FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)6);
     int sociabilidadMaxYo=FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)6);
     int velocidadMaxYo=FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)6);
@@ -42,28 +42,28 @@ public class Grupo7 {
     int edadPapa = FuncionesPersona.valorEstadisticaAleatorio((byte)20);
     
         if (sociabilidadMama > sociabilidadPapa){
-        sociabilidadMaxYo = FuncionesPersona.valorEstadisticaAleatorio=((byte) sociabilidadPapa, (byte) sociabilidadMama);
+            sociabilidadMaxYo = FuncionesPersona.valorEstadisticaAleatorio((byte) sociabilidadPapa, (byte) sociabilidadMama);
     }else{
             sociabilidadMaxYo=FuncionesPersona.valorEstadisticaAleatorio((byte) sociabilidadMama, (byte) sociabilidadPapa);
         }
         if (empatiaMama > empatiaPapa){
-        empatiaMaxYo = FuncionesPersona.valorEstadisticaAleatorio=((byte) empatiaPapa, (byte) empatiaMama);
+            empatiaMaxYo = FuncionesPersona.valorEstadisticaAleatorio((byte) empatiaPapa, (byte) empatiaMama);
     }else{
             empatiaMaxYo=FuncionesPersona.valorEstadisticaAleatorio((byte) empatiaMama, (byte) empatiaPapa);
         }
         if (velocidadMama > velocidadPapa){
-        velocidadMaxYo = FuncionesPersona.valorEstadisticaAleatorio=((byte) velocidadPapa, (byte) velocidadMama);
+            velocidadMaxYo = FuncionesPersona.valorEstadisticaAleatorio((byte) velocidadPapa, (byte) velocidadMama);
     }else{
             velocidadMaxYo=FuncionesPersona.valorEstadisticaAleatorio((byte) velocidadMama, (byte) velocidadPapa);
         }
         
         if (fuerzaMama > fuerzaPapa){
-        fuerzaMaxYo = FuncionesPersona.valorEstadisticaAleatorio=((byte) fuerzaPapa, (byte) fuerzaMama);
+            fuerzaMaxYo = FuncionesPersona.valorEstadisticaAleatorio((byte) fuerzaPapa, (byte) fuerzaMama);
     }else{
             fuerzaMaxYo=FuncionesPersona.valorEstadisticaAleatorio((byte) fuerzaMama, (byte) fuerzaPapa);
         }
-        
-        boolean vivoYo = true, vivaMama, vivoPapa;
+   
+    boolean vivoYo = true, vivaMama, vivoPapa;
         String Hermano1= "", Hermano2 ="", Hermano3 = "";
         
         // Variables Hermano1
@@ -110,19 +110,19 @@ public class Grupo7 {
         
     
     //Mama por pantalla
-        System.out.println(nombreMamaYo+" "+apellidosMamaYo+"("+generoMama+")");
-        System.out.println("Sociabilidad: "+sociabilidadMamaYo+".");
-        System.out.println("Empatía: "+empatiaMamaYo+".");
-        System.out.println("Inteligencia: "+inteligenciaMamaYo+".");
-        System.out.println("Velocidad: "+velocidadMamaYo+".");
+        System.out.println(nombreMama+" "+apellidosMama+"("+generoMama+")");
+        System.out.println("Sociabilidad: "+sociabilidadMama+".");
+        System.out.println("Empatía: "+empatiaMama+".");
+        System.out.println("Inteligencia: "+inteligenciaMama+".");
+        System.out.println("Velocidad: "+velocidadMama+".");
         System.out.println("Edad: "+edadMama);
         System.out.println("------------------------------------------------------");
     //Papa por pantalla
-        System.out.println(nombrePapaYo+" "+apellidosPapaYo+"("+generoPapa+")");
-        System.out.println("Sociabilidad: "+sociabilidadPapaYo+".");
-        System.out.println("Empatía: "+empatiaPapaYo+".");
-        System.out.println("Inteligencia: "+inteligenciaPapaYo+".");
-        System.out.println("Velocidad: "+velocidadPapaYo+".");
+        System.out.println(nombrePapa+" "+apellidosPapa+"("+generoPapa+")");
+        System.out.println("Sociabilidad: "+sociabilidadPapa+".");
+        System.out.println("Empatía: "+empatiaPapa+".");
+        System.out.println("Inteligencia: "+inteligenciaPapa+".");
+        System.out.println("Velocidad: "+velocidadPapa+".");
         System.out.println("Edad: "+edadPapa+".");
         System.out.println("------------------------------------------------------");
     //Yo por pantalla
