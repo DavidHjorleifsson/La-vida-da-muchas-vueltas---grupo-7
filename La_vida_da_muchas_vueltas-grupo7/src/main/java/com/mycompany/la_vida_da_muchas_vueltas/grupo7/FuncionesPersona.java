@@ -44,6 +44,9 @@ public class FuncionesPersona {
         }   
         
     }
+    /**
+     *Se le asigna a las estadisticas de cada persona un apellido aleatorio dentro de los que tenemos aquí
+     */
     public static String apellidosAleatorio(){
         String apellidos[]={"Fernández", "De todos los santos", "Heredia", "Aguirre", "Del Piero", "Trump", "Obama", "Rajoy", "Pérez", "Reverte",
                             "Rojas", "Muñoz", "de la Rosa", "de la O", "Guiérrez", "Molina", "López", "Romero", "Franco", "Martínez", "Fernández","Ruiz", "Machís",
@@ -51,6 +54,10 @@ public class FuncionesPersona {
         
         return apellidos[new Random().nextInt(apellidos.length)]+" "+apellidos[new Random().nextInt(apellidos.length)];
     }
+    /**
+     *Creamos números aleatorios a la hora de generar las estadísticas de las personas
+     * De esta manera las estadísticas no serán iguales y si lo son es por casualidad
+     */
     public static int valorEstadisticaAleatorio(){
     
     Random aleatorio = new Random();
