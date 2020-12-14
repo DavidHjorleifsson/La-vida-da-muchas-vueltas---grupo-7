@@ -17,27 +17,27 @@ public class Grupo7 {
     String apellidosYo= FuncionesPersona.apellidosAleatorio();
     int empatiaMaxYo=FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)5);
     int inteligenciaMaxYo=FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)6);
-    int sociabilidadYo=FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)6);
+    int sociabilidadMaxYo=FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)6);
     int velocidadMaxYo=FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)6);
     int fuerzaMaxYo=FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)6);
 //Mama
 
-    String nombreMamaYo=FuncionesPersona.nombreAleatorio(generoMama);
-    String apellidosMamaYo=apellidosYo;
-    int empatiaMamaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
-    int inteligenciaMamaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
-    int velocidadMamaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
-    int fuerzaMamaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
-    int sociabilidadMamaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
+    String nombreMama=FuncionesPersona.nombreAleatorio(generoMama);
+    String apellidosMama=apellidosYo;
+    int empatiaMama=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
+    int inteligenciaMama=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
+    int velocidadMama=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
+    int fuerzaMama=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
+    int sociabilidadMama=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
     int edadMama=FuncionesPersona.valorEstadisticaAleatorio((byte)30);
     //papa
-    String nombrePapaYo=FuncionesPersona.nombreAleatorio(generoPapa);
-    String apellidosPapaYo=apellidosYo;
-    int sociabilidadPapaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
-    int empatiaPapaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
-    int inteligenciaPapaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
-    int velocidadPapaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
-    int fuerzaPapaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
+    String nombrePapa=FuncionesPersona.nombreAleatorio(generoPapa);
+    String apellidosPapa=apellidosYo;
+    int sociabilidadPapa=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
+    int empatiaPapa=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
+    int inteligenciaPapa=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
+    int velocidadPapa=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
+    int fuerzaPapa=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
     int numeroAleatorio= FuncionesPersona.valorEstadisticaAleatorio();
     int edadPapa = FuncionesPersona.valorEstadisticaAleatorio((byte)20);
     
@@ -127,7 +127,7 @@ public class Grupo7 {
         System.out.println("------------------------------------------------------");
     //Yo por pantalla
         System.out.println(nombreYo+" "+apellidosYo+"("+generoYo+")");
-        System.out.println("Sociabilidad: "+sociabilidadYo+".");
+        System.out.println("Sociabilidad: "+sociabilidadMaxYo+".");
         System.out.println("Empatía: "+empatiaMaxYo+".");
         System.out.println("Inteligencia: "+inteligenciaMaxYo+".");
         System.out.println("Velocidad: "+velocidadMaxYo+".");

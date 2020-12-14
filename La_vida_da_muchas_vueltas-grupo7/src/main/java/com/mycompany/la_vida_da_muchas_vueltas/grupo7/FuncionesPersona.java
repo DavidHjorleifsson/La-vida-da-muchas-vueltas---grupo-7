@@ -67,7 +67,7 @@ public class FuncionesPersona {
     return numeroAleatorio; 
     }
      public static int valorEstadisticaAleatorio(int min, int max){
-   
+         
     Random aleatorio = new Random();
     int numeroAleatorio=aleatorio.nextInt(max-min)+min;
     
