@@ -9,9 +9,10 @@ import java.util.Random;
 
 
 public class Grupo7 {
-    public static void main(String[] args) {       
+    public static void main(String[] args) {     
+        
         boolean generoMama= false, generoPapa=true;
-        //Yo
+    /*Variables de Yo */
     boolean generoYo= FuncionesPersona.generoAleatorio();    
     String nombreYo= FuncionesPersona.nombreAleatorio(generoYo);
     String apellidosYo= FuncionesPersona.apellidosAleatorio();
@@ -23,6 +24,8 @@ public class Grupo7 {
     int edadYo=FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)6);
 //Mama
 
+    
+    /*Variables de Mama */
     String nombreMama=FuncionesPersona.nombreAleatorio(generoMama);
     String apellidosMama=apellidosYo;
     int empatiaMama=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
@@ -31,7 +34,7 @@ public class Grupo7 {
     int fuerzaMama=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
     int sociabilidadMama=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
     int edadMama=FuncionesPersona.valorEstadisticaAleatorio((byte)30);
-    //papa
+    /*Variables de Papa */
     String nombrePapa=FuncionesPersona.nombreAleatorio(generoPapa);
     String apellidosPapa=apellidosYo;
     int sociabilidadPapa=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
@@ -67,7 +70,7 @@ public class Grupo7 {
     boolean vivoYo = true, vivaMama, vivoPapa;
         String Hermano1= "", Hermano2 ="", Hermano3 = "";
         
-        // Variables Hermano1
+        /* Variables Hermano1 */
         int edadHermano1 =0;
         boolean generoHermano1=false;
         String nombreHermano1 ="";
@@ -77,7 +80,8 @@ public class Grupo7 {
         int inteligenciaMaxHermano1=0;
         int velocidadMaxHermano1=0;
         int fuerzaMaxHermano1=0;
-        //Variables Hermano 2
+        
+        /*Variables Hermano 2 */
         int edadHermano2 =0;
         boolean generoHermano2=false;
         String nombreHermano2 ="";
@@ -87,7 +91,8 @@ public class Grupo7 {
         int inteligenciaMaxHermano2=0;
         int velocidadMaxHermano2=0;
         int fuerzaMaxHermano2=0;
-        //Variables Hermano3
+        
+        /*Variables Hermano3 */
         int edadHermano3 =0;
         boolean generoHermano3=false;
         String nombreHermano3 ="";
@@ -109,7 +114,8 @@ public class Grupo7 {
         FuncionesPersona.imprimePersona(nombreYo, apellidosYo, generoYo, sociabilidadMaxYo, empatiaMaxYo, inteligenciaMaxYo, velocidadMaxYo, fuerzaMaxYo, edadYo);
         
         
-        
+      /* Aqui sacamos por pantalla a Mama, a Papa y Yo */  
+    
     //Mama por pantalla
         System.out.println(nombreMama+" "+apellidosMama+"("+generoMama+")");
         System.out.println("Sociabilidad: "+sociabilidadMama+".");

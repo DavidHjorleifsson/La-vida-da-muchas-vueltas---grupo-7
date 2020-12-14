@@ -19,13 +19,13 @@ import java.util.Random;
 public class FuncionesPersona {
     /**
      *Programa en el cual creamos estadísticas aleatorias de una persona también de sus padres y de sus hermanos,
-     * generamos un nombre aleatorio según el género que sea.
+     * Aqu
      */
     public static Boolean generoAleatorio(){           
         Random alG= new Random();
         return alG.nextBoolean();
     }
-    
+    /* Generamos nombre aleatorio conforme a los nombres que tenemos*/
     public static String nombreAleatorio(Boolean generoYo){       
         String res="";
         if(generoYo){
