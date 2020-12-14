@@ -15,11 +15,17 @@ public class Grupo7 {
     
     String nombreYo= FuncionesPersona.nombreAleatorio(generoYo);
     String apellidosYo= FuncionesPersona.apellidosAleatorio();
-    int empatiaMaxYo=FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)5);
-    int inteligenciaMaxYo=FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)6);
+    int empatiaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)5);
+    int inteligenciaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)6);
     int sociabilidadYo=FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)6);
-    int velocidadMaxYo=FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)6);
-    int fuerzaMaxYo=FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)6);
+    int velocidadYo=FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)6);
+    int fuerzaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)6);
+    int sociabilidadMaxYo;
+    int empatiaMaxYo;
+    int inteligenciaMaxYo;
+    int velocidadMaxYo;
+    int fuerzaMaxYo;
+    int edadYo;
 //Mama
 
     String nombreMama=FuncionesPersona.nombreAleatorio(generoMama);
