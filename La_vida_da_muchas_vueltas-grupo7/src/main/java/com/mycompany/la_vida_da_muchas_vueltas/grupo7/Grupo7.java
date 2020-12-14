@@ -111,7 +111,9 @@ public class Grupo7 {
             
         }
         
-        FuncionesPersona.imprimePersona(nombreYo, apellidosYo, generoYo, sociabilidadMaxYo, empatiaMaxYo, inteligenciaMaxYo, velocidadMaxYo, fuerzaMaxYo, edadYo);
+        FuncionesPersona.imprimePersona(nombreYo, apellidosYo, generoYo,(byte) sociabilidadMaxYo, (byte)empatiaMaxYo, (byte)inteligenciaMaxYo, (byte)velocidadMaxYo, (byte)fuerzaMaxYo, (byte)edadYo);
+        FuncionesPersona.imprimePersona(nombreMama, apellidosMama, generoMama,(byte) sociabilidadMama,(byte) empatiaMama, (byte)inteligenciaMama,(byte) velocidadMama, (byte)fuerzaMama, (byte)edadMama);
+        FuncionesPersona.imprimePersona(nombrePapa, apellidosPapa, generoPapa, (byte)sociabilidadPapa, (byte)empatiaPapa, (byte)inteligenciaPapa, (byte)velocidadPapa, (byte)fuerzaPapa, (byte)edadPapa);
         
         
       /* Aqui sacamos por pantalla a Mama, a Papa y Yo */  

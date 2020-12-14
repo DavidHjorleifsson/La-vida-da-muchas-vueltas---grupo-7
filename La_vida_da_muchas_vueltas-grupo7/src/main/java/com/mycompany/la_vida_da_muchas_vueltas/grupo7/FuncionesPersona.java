@@ -89,6 +89,7 @@ public class FuncionesPersona {
          res+=("Velocidad: "+velocidad+".");
          res+=("Fuerza: "+fuerza+".");
          res+=("Edad: "+edad+".");
+         res+=("---------------------------------------------------");
          return res;
      }
 
