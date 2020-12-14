@@ -22,19 +22,17 @@ public class Grupo7 {
     int fuerzaMaxYo=FuncionesPersona.valorEstadisticaAleatorio((byte)0, (byte)6);
 //Mama
 
-    String nombreMama=FuncionesPersona.nombreAleatorio(generoMama);
-    String apellidosMamaYo=FuncionesPersona.apellidosAleatorio() + " " + FuncionesPersona.apellidosAleatorio();
-    boolean generoMamaYo=FuncionesPersona.generoAleatorio();
+    String nombreMamaYo=FuncionesPersona.nombreAleatorio(generoMama);
+    String apellidosMamaYo=apellidosYo;
     int empatiaMamaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
     int inteligenciaMamaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
     int velocidadMamaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
     int fuerzaMamaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
-    int sociabilidadMama=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
-    int edadMama=FuncionesPersona.valorEstadisticaAletorio((byte)30);
+    int sociabilidadMamaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
+    int edadMama=FuncionesPersona.valorEstadisticaAleatorio((byte)30);
     //papa
     String nombrePapaYo=FuncionesPersona.nombreAleatorio(generoPapa);
-    String apellidosPapaYo=FuncionesPersona.apellidosAleatorio() + " " + FuncionesPersona.apellidosAleatorio();
-    boolean generoPapaYo=FuncionesPersona.generoAleatorio();
+    String apellidosPapaYo=apellidosYo;
     int sociabilidadPapaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
     int empatiaPapaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
     int inteligenciaPapaYo=FuncionesPersona.valorEstadisticaAleatorio((byte)50);
@@ -43,7 +41,28 @@ public class Grupo7 {
     int numeroAleatorio= FuncionesPersona.valorEstadisticaAleatorio();
     int edadPapa = FuncionesPersona.valorEstadisticaAleatorio((byte)30);
     
+    //Mama por pantalla
+        System.out.println(nombreMamaYo+" "+apellidosMamaYo+"("+generoMama+")");
+        System.out.println("Sociabilidad: "+sociabilidadMamaYo+".");
+        System.out.println("Empatía: "+empatiaMamaYo+".");
+        System.out.println("Inteligencia: "+inteligenciaMamaYo+".");
+        System.out.println("Velocidad: "+velocidadMamaYo+".");
+        System.out.println("Edad: "+edadMama);
+        System.out.println("------------------------------------------------------");
+    //Papa por pantalla
+        System.out.println(nombrePapaYo+" "+apellidosPapaYo+"("+generoPapa+")");
+        System.out.println("Sociabilidad: "+sociabilidadPapaYo+".");
+        System.out.println("Empatía: "+empatiaPapaYo+".");
+        System.out.println("Inteligencia: "+inteligenciaPapaYo+".");
+        System.out.println("Velocidad: "+velocidadPapaYo+".");
+        System.out.println("Edad: "+edadPapa+".");
+        System.out.println("------------------------------------------------------");
+    //Yo por pantalla
         System.out.println(nombreYo+" "+apellidosYo+"("+generoYo+")");
+        System.out.println("Sociabilidad: "+sociabilidadYo+".");
+        System.out.println("Empatía: "+empatiaMaxYo+".");
+        System.out.println("Inteligencia: "+inteligenciaMaxYo+".");
+        System.out.println("Velocidad: "+velocidadMaxYo+".");
     }
        
 }

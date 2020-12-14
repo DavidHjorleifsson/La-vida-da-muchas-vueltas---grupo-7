@@ -45,15 +45,11 @@ public class FuncionesPersona {
         
     }
     public static String apellidosAleatorio(){
-        String res="";
         String apellidos[]={"Fernández", "De todos los santos", "Heredia", "Aguirre", "Del Piero", "Trump", "Obama", "Rajoy", "Pérez", "Reverte",
                             "Rojas", "Muñoz", "de la Rosa", "de la O", "Guiérrez", "Molina", "López", "Romero", "Franco", "Martínez", "Fernández","Ruiz", "Machís",
                             "Duarte", "Díaz", "Vico", "Montoro"};
-        String apellidos2[]={"Fernández","Diaz","Moreno","Torres","Ortega","Suarez","Cortes","Cano","Vega", "Guzmán", "Varo", "Páramos", 
-                            "Pérez", "Vivo", "Piernas", "Moco", "Verde", "Pitagoras", "Pintor","Delgado", "Vietes", "Portero", "Pestaña", 
-                            "Guerrero", "Sardà", "Reyes","Soldado", "Silva", "Hernández"};
-        res+=(" "+apellidos+" "+apellidos2);
-        return apellidos[new Random().nextInt(apellidos.length)];
+        
+        return apellidos[new Random().nextInt(apellidos.length)]+" "+apellidos[new Random().nextInt(apellidos.length)];
     }
     public static int valorEstadisticaAleatorio(){
     
